@@ -17,3 +17,9 @@ How to build the container with core.
 
 docker exec -it --user root [container ID] bash
 
+* How to get your solr server IP address
+
+docker inspect [container ID]
+
+then find "Gateway" under networks then you will get the IP address
+
